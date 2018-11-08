@@ -7,5 +7,6 @@ if [ "$(whoami)" != "root" ]; then
 fi
 
 # 构建镜像
-${SUDO} docker build --no-cache -t ${NAMESPACE}/nginx_php7 ./nginx_php7
+${SUDO} docker build --no-cache -t ${NAMESPACE}/php7 ./php7
+${SUDO} docker build --no-cache -t ${NAMESPACE}/nginx ./nginx
 
