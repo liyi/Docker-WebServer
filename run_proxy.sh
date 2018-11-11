@@ -27,7 +27,7 @@ fi
 
 ${SUDO} docker run \
     --net host \
-    --name _proxy \
+    --name proxy \
     --restart always \
     -d \
     -v ${c}:/data/_proxy \
